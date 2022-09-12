@@ -3,6 +3,9 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
 
+from django.db.models.functions import Lower
+
+
 # Create your views here.
 
 def all_products(request):
